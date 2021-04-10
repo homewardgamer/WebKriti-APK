@@ -11,5 +11,5 @@
 ### open the server at localhost:3000
 
 
-#NOTE 
+# NOTE 
 ## The issue shown in the video has been resolved
