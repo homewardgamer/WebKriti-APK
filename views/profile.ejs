@@ -1,0 +1,98 @@
+<%- include ('template/header.ejs')-%>
+
+<h1>Welcome <%=data.name%></h1>
+<div style="align-items: center; text-align: center; margin-left: 35%;">
+    <% if(data.role =="admin"){%>
+    <div class="row">
+        <div class="col-lg-6" style="padding: 10%;">
+            <h3>Add a profile</h3>
+            <form method="POST" action="/addC">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Username</label>
+                    <input type="text" class="form-control" name="usrnm" id="exampleFormControlInput1"
+                        placeholder="Enter a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select Role</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="role" required>
+                        <option value="G">Geneticx</option>
+                        <option value="S">Sarasva</option>
+                        <option value="V">Virtuosi</option>
+                        <option value="R">Rangtaringini</option>
+                        <option value="T">Thunderbolt</option>
+                        <option value="N">Nirmiti</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Password</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="pass" placeholder=""
+                        required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <% } %>
+    <% if(data.role =="C"){%>
+
+    <div class="row">
+        <div class="col-lg-6" style="padding: 10%;">
+            <h3>Add a profile</h3>
+            <form method="POST" action="/addM">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Username</label>
+                    <input type="text" class="form-control" name="usrnm" id="exampleFormControlInput1"
+                        placeholder="Enter a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select Role</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="role" required>
+                        <option value="G">Geneticx</option>
+                        <option value="S">Sarasva</option>
+                        <option value="V">Virtuosi</option>
+                        <option value="R">Rangtaringini</option>
+                        <option value="T">Thunderbolt</option>
+                        <option value="N">Nirmiti</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Password</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="pass" placeholder=""
+                        required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <% } %>
+    <% if(data.role =="M" || data.role =="C"){ %>
+    <div class="row">
+        <div class="col-lg-6" style="padding: 10%;">
+            <h3>Change Content Of Page</h3>
+            <form action="/change<%= data.society %>" method="POST">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter Text</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="data" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <% } %>
+    <% if(data.role =="M" || data.role =="C"){ %>
+    <div class="row">
+        <div class="col-lg-6" style="padding: 10%;">
+            <h3>Add A New Event</h3>
+            <form action="/changeEvent<%= data.society %>" method="POST">
+                <label for="exampleFormControlTextarea1">Enter Event Name</label>
+                <input type="text" class="form-control" name="eventName" id="exampleFormControlInput1"
+                    placeholder="Enter event name" required>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <% } %>
+</div>
+<%- include ('template/footer.ejs')-%>

@@ -1,0 +1,197 @@
+.col{
+    text-align: center;
+    padding: 2%;
+}
+.card{
+    margin: 2%;
+    align-items: center;
+    background-color: #e3fdfd;
+    opacity: 90%;
+    border: none;
+}
+.card img{
+    margin-top: 3%;
+}
+
+.row .col-lg-6{
+    padding-left: 5%;
+}
+.row .col-lg-5{
+    padding-left: 5%;
+}
+
+.item {
+    text-align: center;
+
+
+}
+
+.card h3{
+    color: black;
+}
+body{
+    background-color: #e3fdfd;
+}
+.card a :hover{
+    text-decoration: none;
+
+}
+.card h3{
+    color: black;
+    font-family:'Ubuntu', sans-serif ;
+}
+.card p{
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/cool-background.svg');
+    background-position: center;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#particles-js h1{
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 30%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+
+}
+.card img{
+    height:150px;
+    width:60%;
+  }
+  
+  div [class^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  .foot{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    background-color: black;
+    color: white;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+    padding-top: 1%;
+  }
+
+  .footer{
+    left:0px;
+    bottom:0px;
+    background-color: black;
+    color: white;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+    padding-top: 1%;
+  }
+  .fab{
+      color: white;
+  }
+
+
+  .col-lg-6 h1{
+      padding-top: 5%;
+      font-family: 'Ubuntu', sans-serif;
+   
+  }
+
+
+  .col-lg-12{
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+
+  }
+  li{
+      font-size: 1.5rem;
+      padding: 3%;
+  }
+  ul {
+    list-style-type: none;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.col-lg-5 h1{
+    padding-top: 20%;
+}
+.navbar-inner {
+    background:transparent;
+}
+nav{
+    background: transparent !important;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+#nothing{
+    text-align: center;
+    margin-left: 25vw;
+    margin-top: 25vh;
+}
+label{
+    font-size: 1.25rem;
+
+    font-family: 'Ubuntu', sans-seri;
+}
+button{
+    padding: 5%;
+    margin-top: 3%;
+}
