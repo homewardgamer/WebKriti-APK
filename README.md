@@ -6,8 +6,8 @@
 
 ## How to Run. the app offline?
 ### Clone the Repo
-### Use npm install to install all the dependencies
-### Run the command node app.js
+### Use `npm install` to install all the dependencies
+### Run the command `node app.js`
 ### open the server at localhost:3000
 
 
