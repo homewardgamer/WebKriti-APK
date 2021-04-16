@@ -8,7 +8,7 @@
 ### Clone the Repo
 ### Use `npm install` to install all the dependencies
 ### Run the command `node app.js`
-### open the server at localhost:3000
+### The server will be running at .[localhost:3000](localhost:3000)
 
 
 # NOTE 
